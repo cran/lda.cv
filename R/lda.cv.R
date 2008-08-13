@@ -22,7 +22,7 @@ ldacv.gui<-function (dummy = NULL)
             }
             else {
                 postMsg("Reading data...")		     
-                 my.data = as.matrix(read.table(flnm,header=T,row.names=1))
+                 my.data = as.matrix(read.table(flnm,header=T,row.names=1,sep="\t"))
 		     if(is.null(flnm)==FALSE){
 				assign("x",my.data,inherits=TRUE)
 				postMsg("done.\n")
